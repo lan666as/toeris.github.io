@@ -1,0 +1,65 @@
+                                /* C to the S to the S */
+@import 'keyframe.css';
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font: 20px/34px "Bitstream Vera Sans Mono", "Anonymous Pro", "Consolas", monospace;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25);
+	background-color: #000000;
+}
+
+ul.content {
+    list-style: none;
+    position: absolute;
+    left: 130px;
+    top: 40%;
+    width: 550px;
+    margin-top: -62px;
+}
+
+ul li {
+    padding: 5px 0;
+	color: #ffffff;
+}
+
+#first-line {
+    font-size: 22px;
+}
+.typing {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    text-indent: -999em;
+    background: #ccc;
+    -webkit-animation: flick 1s infinite;
+    -moz-animation: flick 1s infinite;
+    -ms-animation: flick 1s infinite;
+    -o-animation: flick 1s infinite;
+    animation: flick 1s infinite;
+}
+/*.dollar:before {
+    content: '$';
+    padding-right: 20px;
+    
+    color: #50657b;
+}*/
+
+@media (max-width: 550px) {
+    body {
+        font-size: 15px;
+        min-height: 530px;
+    }
+    ul.content {
+        width: 80%;
+        top: 20%;
+        left: 10%;
+        min-width: 290px;
+    }
+    .arrow {
+        display: none !important;
+    }
+}
+                            
